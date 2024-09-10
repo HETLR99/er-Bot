@@ -30,8 +30,8 @@ if os.path.exists('config.env'):
 
 # Variables
 
-api_id = int(os.environ.get("API_ID",25571951))
-api_hash = os.environ.get("API_HASH","16161a3ffddbbe89afdc8e579d90efb0")
+api_id = int(os.environ.get("API_ID","20234710"))
+api_hash = os.environ.get("API_HASH","abcf167fb12d540b887fe135e83874fa")
 bot_token = os.environ.get("BOT_TOKEN","7445547849:AAHfX4_8TQ57cg71Q_l9ABoa6RfgfPWHgsE")
 
 database = os.environ.get("MONGO_URI","mongodb+srv://rssfeedleech:rssfeedleech@rssfeedleech.hhekcjk.mongodb.net/?retryWrites=true&w=majority&appName=rssfeedleech
