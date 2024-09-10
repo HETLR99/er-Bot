@@ -30,19 +30,7 @@ if os.path.exists('config.env'):
 
 # Variables
 
-api_id = int(os.environ.get("API_ID","20234710"))
-api_hash = os.environ.get("API_HASH","abcf167fb12d540b887fe135e83874fa")
-bot_token = os.environ.get("BOT_TOKEN","7445547849:AAHfX4_8TQ57cg71Q_l9ABoa6RfgfPWHgsE")
 
-database = os.environ.get("MONGO_URI","mongodb+srv://rssfeedleech:rssfeedleech@rssfeedleech.hhekcjk.mongodb.net/?retryWrites=true&w=majority&appName=rssfeedleech
-")
-session = os.environ.get("SESSION_NAME","encoderbot")
-
-drive_dir = os.environ.get("DRIVE_DIR")
-index = os.environ.get("INDEX_URL")
-
-download_dir = os.environ.get("DOWNLOAD_DIR")
-encode_dir = os.environ.get("ENCODE_DIR")
 
 owner = list(set(int(x) for x in os.environ.get("OWNER_ID").split()))
 sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
