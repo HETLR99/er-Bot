@@ -30,12 +30,13 @@ if os.path.exists('VideoEncoder/config.env'):
 
 # Variables
 
-api_id = int(os.environ.get("API_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("BOT_TOKEN")
+api_id = int(os.environ.get("API_ID",25571951))
+api_hash = os.environ.get("API_HASH","16161a3ffddbbe89afdc8e579d90efb0")
+bot_token = os.environ.get("BOT_TOKEN","7445547849:AAHfX4_8TQ57cg71Q_l9ABoa6RfgfPWHgsE")
 
-database = os.environ.get("MONGO_URI")
-session = os.environ.get("SESSION_NAME")
+database = os.environ.get("MONGO_URI","mongodb+srv://rssfeedleech:rssfeedleech@rssfeedleech.hhekcjk.mongodb.net/?retryWrites=true&w=majority&appName=rssfeedleech
+")
+session = os.environ.get("SESSION_NAME","encoderbot")
 
 drive_dir = os.environ.get("DRIVE_DIR")
 index = os.environ.get("INDEX_URL")
@@ -49,7 +50,7 @@ everyone = list(set(int(x) for x in os.environ.get("EVERYONE_CHATS").split()))
 all = everyone + sudo_users + owner
 
 try:
-    log = int(os.environ.get("LOG_CHANNEL"))
+    log = int(os.environ.get("LOG_CHANNEL",""))
 except:
     log = owner
     print('Fill log or give user/channel/group id atleast!')
